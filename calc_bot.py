@@ -22,7 +22,7 @@ async def calculate(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception:
         await update.message.reply_text("⚠️ দুঃখিত, হিসাবটা বুঝতে পারিনি। যেমন লিখুন: 10+20-5")
 
-app = ApplicationBuilder().token("YOUR_BOT_TOKEN_HERE").build()
+app = ApplicationBuilder().token("8224902232:AAFmDbtTjpU1Ga-A34m9CeQUc3tiT5O4x44").build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, calculate))
 app.run_polling()
